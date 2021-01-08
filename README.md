@@ -2,11 +2,17 @@
 
 ## Purpose
 
-A very small html test app consisting of a PHP file combined with a Vue.js instance.
+A very small web test app consisting of a PHP file combined with a Vue.js instance.
 
 The initial data for the Vue.js app is provided by the PHP back-end.
 
 ## Steps
+
+### Preparation
+
+To write this test app, I assume you have:
+- installed a local copy of PHP 7.4 on your machine
+- or use [PHPSandbox](https://phpsandbox.io/), an online PHP code editor & test environment
 
 ### PHP
 
@@ -26,8 +32,8 @@ The initial data for the Vue.js app is provided by the PHP back-end.
 
 - add the Vue.js runtime to your PHP page from the standard CDN
 - create a Vue.js instance in your PHP page
-- use the PHP $data array as the Vue.js data object
-- initialize the `color` property in the data object to `red` (in JavaScript, not PHP)
+- use the PHP $data array as the Vue.js data object (in such a way you are able to add extra JS properties in the data object at the same level)
+- initialize the `color` property in the data object to `red` (in Vue.js, not PHP)
 - init `buttonText` property to "`Go!`"
 - create an html box with (id = `box1`), width 80%, centered horizontally on the page, text centered
 - bind the text color of box1 to the Vue.js data variable `randomColor`
@@ -43,21 +49,22 @@ The initial data for the Vue.js app is provided by the PHP back-end.
 - the button must be 100px wide and centered in box3
 - add a `<ul>` tag below box3, adding a new `<li>` tag with the current buttonText to the `<ul>` tag on every click of the toggle button using the `log` data property in Vue.js
 
-## Key takeaways & tips
+## Key points & tips
 
-- keep your code as clean and readable/maintainable as possible
-- separate business logic from layout
-- use the latest language constructs, css, tags, ...
-- take care of async page startup
+- keep your code (layout) as clean and readable/maintainable as possible
+- separate business logic from layout in html/css 
+- use the latest language constructs/functions/properties in PHP, JS, HTML & CSS
+- take issues with async page startup into account
 
 ## Test environment
 
-- install a local copy of PHP 7.4
-- in your project's directory, start a local PHP server on port 8000
+If you have a local copy of PHP 7.4, start a local PHP server on port 8000 in your project's directory:
 ```
 # php -S localhost:8000
 ```
-- in your browser, go to `http://localhost:8000`
+In your browser, go to `http://localhost:8000`
+
+In case you use the [PHPSandbox](https://phpsandbox.io/) online, you can test your app immediately online there
 
 ## Example screenshot
 
