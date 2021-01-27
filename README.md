@@ -11,8 +11,8 @@ The initial data for the Vue.js app is provided by the PHP back-end.
 ### Preparation
 
 To write this test app, I assume you have:
-- installed a local copy of PHP 7.4 on your machine
-- or use [PHPSandbox](https://phpsandbox.io/), an online PHP code editor & test environment
+- use [PHPSandbox](https://phpsandbox.io/), an online PHP code editor & test environment (use the "Standard PHP notebook with Web and CLI" notebook option for this test)
+- or installed a local copy of PHP 7.4 on your machine
 
 ### PHP
 
